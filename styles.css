@@ -123,3 +123,12 @@ body {
 }
 
 
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 50px;
+    font-weight: bold;
+}

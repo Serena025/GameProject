@@ -14,6 +14,9 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board') 
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
+// variables for arry how many times won/lost set to 0
+// varibales for each write to html output 
+// reset automatically function
 
 startGame()
 
@@ -21,6 +24,9 @@ startGame()
 function startGame() {
     circleTurn = false
     cellElements.forEach(cell => {
+    cell.classList.remove(X_CLASS)
+    cell.classList.remove(CIRCLE_CLASS)
+    cell.removeEventListener('click', handleClick)
     cell.addEventListener('click', handleClick, { once: true })
 })
 setboardHoverClass()
@@ -77,3 +83,7 @@ function checkWin(currentClass) {
         })
     })
 }
+
+// if endgame is true then end game
+// also add tally counter 
+// style it (simple no animation)
