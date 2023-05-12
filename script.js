@@ -14,9 +14,50 @@ const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board') 
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
+
+
+
 // variables for arry how many times won/lost set to 0
 // varibales for each write to html output 
 // reset automatically function
+
+//let tallyWins = document.getElementById('tally');
+//let tallyLosses = document.getElementById('tally-losses');
+
+//let int = document.getElementById('number');
+//let integer = 0;
+
+
+
+
+//let winsDisplayElem = document.querySelector('.wins')
+//let lossesDisplayElem = document.querySelector('.losses')
+//let drawDisplayElem = document.querySelector('.draws') 
+
+//const solve = (a1, a2) => {
+   // let wins = 0 // tally 1st band's category wins
+  //  let losses = 0 // tally 2nd band's category wins
+  //  for (let i=0; i<a1.length; i++) {
+      // `?` < -- conditional ternary operator
+   //   a1[i] > a2[i] ? wins++ : null // if 1st band's score is higher
+  //    a1[i] < a2[i] ? losses++ : null // if 2nd band's score is higher
+  //  }
+    // format text using 'template literals'
+  //  if (wins > losses) {
+  //    return `${wins}, ${losses}: Alice made "Kurt" proud!`
+   // }
+   
+  //  else if (wins < losses) {
+  //    return `${wins}, ${losses}: Bob made "Jeff" proud!`
+  //  }
+  //  else {
+  //    return `${wins}, ${losses}: that looks like a "draw"! Rock on!`
+  //  }
+  //}
+ //console.log(winsDisplayElem)
+
+
+
 
 startGame()
 
@@ -84,6 +125,13 @@ function checkWin(currentClass) {
     })
 }
 
-// if endgame is true then end game
-// also add tally counter 
-// style it (simple no animation)
+
+
+
+function tallyWins(a1, a2) {
+    let wins = 0
+    for (let i=0; i<a1.length; i++) {
+        a1[i] > a2[i] ? wins++ : null
+    }
+    return wins
+}

@@ -132,3 +132,22 @@ ul {
     font-size: 50px;
     font-weight: bold;
 }
+
+.wins {
+   color: black;
+   font-size: 50px;
+   font-weight: bold;
+    
+}
+
+.draws {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.losses {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
