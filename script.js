@@ -12,7 +12,11 @@ const WINNING_COMBINATIONS = [
 ]
 const cellElements = document.querySelectorAll('[data-cell]') 
 const board = document.getElementById('board') 
+const winningMessageElement = document.getElementById('winningMessage')
+const restartButton = document.getElementById('restartButton')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
+
+
 let circleTurn
 
 
@@ -61,6 +65,7 @@ let circleTurn
 
 startGame()
 
+restartButton.addEventListener('click', startGame)
 
 function startGame() {
     circleTurn = false
@@ -70,33 +75,46 @@ function startGame() {
     cell.removeEventListener('click', handleClick)
     cell.addEventListener('click', handleClick, { once: true })
 })
-setboardHoverClass()
+    setBoardHoverClass()
+    winningMessageElement.classList.remove('show')
 }
+
 
 function handleClick(event) {
     const cell = event.target
     const currentClass = circleTurn ?  CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
+        
         endGame(false)
+    } else if (isDraw()) {
+        endGame(true)
+    } else {
+        swapTurns()
+    setBoardHoverClass()
     }
     //placeMark
     // Check for Win
     // Check for Draw
     // Switch Turns
-    swapTurns()
-    setBoardHoverClass()
+    
 }
 
 function endGame(draw) {
     if (draw) {
-
+        winningMessageElement.innerText = 'Draw!'
     } else {
         winningMessageTextElement.innerText = `${circleTurn ? "O's" : "X's"} Wins!`
     }
     winningMessagElement.classList.add('show')
-    }
+}
 
+function isDraw() {
+    return [...cellElements].every(cell => {
+        return cell.classList.contains(X_CLASS) ||
+        cell.classList.contains(CIRCLE_CLASS)
+    })
+}
 
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass)
@@ -128,10 +146,10 @@ function checkWin(currentClass) {
 
 
 
-function tallyWins(a1, a2) {
-    let wins = 0
-    for (let i=0; i<a1.length; i++) {
-        a1[i] > a2[i] ? wins++ : null
-    }
-    return wins
-}
+// function tallyWins(a1, a2) {
+//     let wins = 0
+//     for (let i=0; i<a1.length; i++) {
+//         a1[i] > a2[i] ? wins++ : null
+//     }
+//     return wins
+// }
