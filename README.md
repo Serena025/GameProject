@@ -8,3 +8,9 @@ https://forum.freecodecamp.org/t/help-with-win-lose-logic-for-tic-tac-toe-game/4
 
 How someone kept score but there is a more effienent way to do this https://stackoverflow.com/questions/36215438/keeping-score-in-html-game
 
+I deleted everything and started a trivia game... about Area 51 
+
+
+
+https://pixabay.com/photos/night-photograph-flashlight-ray-2183637/
+
