@@ -10,7 +10,13 @@ How someone kept score but there is a more effienent way to do this https://stac
 
 I deleted everything and started a trivia game... about Area 51 
 
-
-
+Background, no attribute required, royalty free
 https://pixabay.com/photos/night-photograph-flashlight-ray-2183637/
+
+
+
+Tutorial for Simple Quiz 
+https://www.youtube.com/watch?v=rCVqQ8NKU2M
+
+
 

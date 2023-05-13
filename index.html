@@ -7,8 +7,52 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="background-image">
 
-    <div class="background-image"></div>
+        <h1>Do you believe in stranger things?</h1>
+
+        <ol>
+            <div class="Q1">
+            <li>Are aliens in space?</li> 
+            <li> <input type="radio" name="question1"> Yes </li>
+            <li><input type="radio" name="question1"> No </li>
+            </div>
+    
+        <div class="Q2">
+       <li> Did you storm Area 51 September 20, 2019? </li>
+       <li> <input type="radio" name="question2"> Yes</li>
+       <li><input type="radio" name="question2"> No</li>
+       <li> <input type="radio" name="question2"> Possibly</li>
+       
+    </div>
+
+    <div class="Q3">
+        <li> Are there aliens at Area 51? </li>
+        <li> <input type="radio" name="question3"> Yes</li>
+        <li><input type="radio" name="question3"> No</li>
+        <li> <input type="radio" name="question3"> Possibly</li>
+         
+     </div>
+
+     <div class="Q4">
+        <li> Have you seen a UFO? </li>
+        <li> <input type="radio" name="question4"> Yes</li>
+        <li><input type="radio" name="question4"> No</li>
+         
+     </div>
+
+     <div class="Q5">
+        <li> Do you want to meet an alien? </li>
+        <li> <input type="radio" name="question5"> Yes</li>
+        <li><input type="radio" name="question5"> No</li>
+         </ol>
+         <input type="submit" class="submitQuiz" name="submit" value="submitQuiz" oneclick="result()">
+     </div>
+
+   
+    
+
+    </div>
 </body>
 
 <style>
@@ -25,9 +69,40 @@
         height: 100vh;
     }
 
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 70px;
+    }
 
+    .Q1{
+        padding-bottom: 30px;
+    }
+    .Q2{
+        padding-bottom: 30px;
+    }
+    .Q3{
+        padding-bottom: 30px;
+    }
+    .Q4{
+        padding-bottom: 30px;
+    }
+    .Q5{
+        padding-bottom: 30px;
+    }
+
+     ol {
+    font-size: 1.5rem;
+    }
+
+    
 
 </style>
 
 
 </html>
+
+
+
+
+
