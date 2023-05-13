@@ -14,39 +14,41 @@
    <h1>Do you believe in stranger things?</h1> 
 
        
-            
+            <div class="Q1">
             Are aliens in space?</br> 
              <input type="radio" name="question1" id="correct1"> Yes <br>
             <input type="radio" name="question1" > No <br>
-            
+            </div>
     
-        
+        <div class="Q2">
         Did you storm Area 51 September 20, 2019? <br>
         <input type="radio" name="question2" id="correct2"> Yes<br>
        <input type="radio" name="question2" > No<br>
         <input type="radio" name="question2" > Possibly<br>
-       
+        </div>
     
 
-    
+    <div class="Q3">
          Are there aliens at Area 51? <br>
          <input type="radio" name="question3" id="correct3"> Yes<br>
          <input type="radio" name="question3" > No<br>
          <input type="radio" name="question3" > Possibly<br>
-         
+         </div>
      
 
-     
+         <div class="Q4">
          Have you seen a UFO? <br>
          <input type="radio" name="question4" id="correct4"> Yes <br>
          <input type="radio" name="question4" > No <br>
-         
+         </div>
      
 
-     
+         <div class="Q5">
          Do you want to meet an alien? <br>
          <input type="radio" name="question5" id="correct5"> Yes<br>
         <input type="radio" name="question5" > No<br>
+        </div>
+
 
        <input type="submit" name="submit" value="submitQuiz" oneclick="submitForm(event)">
     
@@ -74,7 +76,7 @@ function result() {
     }
     
     alert("You are a:" +score);
-    console.log(score)
+    
 
 
 }    
@@ -119,26 +121,24 @@ $(document) .ready(function() {
 
     .Q1{
         padding-bottom: 30px;
+        font-size: 25px;
     }
     .Q2{
         padding-bottom: 30px;
+        font-size: 25px;
     }
     .Q3{
         padding-bottom: 30px;
+        font-size: 25px;
     }
     .Q4{
         padding-bottom: 30px;
+        font-size: 25px;
     }
     .Q5{
         padding-bottom: 30px;
-    }
+        font-size: 25px;
 
-     ol {
-    font-size: 1.5rem;
-    }
-
-    button {
-        font-size: 1.5rem;
     }
 
     
@@ -147,6 +147,7 @@ $(document) .ready(function() {
 
 
 </html>
+
 
 
 
