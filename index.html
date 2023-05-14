@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="./script.js"></script>
 </head>
 <body>
      <div class="background-image">
@@ -57,34 +59,6 @@
     </div>
  
 <script type="text/javascript">
-function result() {
-    var score = 0;
-    if (document.getElementById('correct1').checked) {
-        score ++;
-    }
-    if (document.getElementById('correct2').checked) {
-        score ++;
-    }
-    if (document.getElementById('correct3').checked) {
-        score ++;
-    }
-    if (document.getElementById('correct4').checked) {
-        score ++;
-    }
-    if (document.getElementById('correct5').checked) {
-        score ++;
-    }
-    
-    alert("You are a:" +score);
-    
-
-
-}    
-$(document) .ready(function() {
-    $("submit").click(function() {
-        alert("hello");
-    });
-    });
 
 
 
@@ -100,47 +74,7 @@ $(document) .ready(function() {
 </body>
 
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    .background-image{
-        background-image: url("/Photoforgame/night-photograph-g0536047c0_1920.jpg");
-        background-size: cover;
-        background-repeat: no-repeat
-        width: 200px;
-        height: 100vh;
-    }
-
-    h1 {
-        color: white;
-        text-align: center;
-        padding-top: 70px;
-    }
-
-    .Q1{
-        padding-bottom: 30px;
-        font-size: 25px;
-    }
-    .Q2{
-        padding-bottom: 30px;
-        font-size: 25px;
-    }
-    .Q3{
-        padding-bottom: 30px;
-        font-size: 25px;
-    }
-    .Q4{
-        padding-bottom: 30px;
-        font-size: 25px;
-    }
-    .Q5{
-        padding-bottom: 30px;
-        font-size: 25px;
-
-    }
-
+    
     
 
 </style>
