@@ -18,7 +18,7 @@ border-radius: 10px;
 margin-top: 0;
 border: 2px solid black;
 padding: 5px;
-height: 250px;
+height: 100px;
 background: beige;
 background-image: url("./Photoforgame/night-photograph-g0536047c0_1920.jpg");
 color: white;
@@ -38,6 +38,6 @@ label {
     margin-top: 20px;
     }
     
-   
-    
-
+    .hide {
+    color: white;
+ }

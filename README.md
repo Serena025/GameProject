@@ -26,3 +26,22 @@ Found a working quiz I could edit to make my quiz fully work
 https://codeactually.com/interactivequiz.html
 
 
+Project Description
+
+The Quiz Taker can get a result based on their answers saying if they believe in aliens or not. 
+
+MVP Criteria
+Working quiz
+Java script is in seperate file
+
+Post MVP Criteria
+a meme photo based on the answer the quiz taker gets
+
+Link to live deployment 
+https://serena025.github.io/
+
+
+Stretch goals 
+add moving gifs of aliens and home made music track
+
+
