@@ -1,40 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
+
+body {
+background-color: lightblue;
+font-family: Helvetica;
 }
 
-.background-image{
-    background-image: url("/Photoforgame/night-photograph-g0536047c0_1920.jpg");
-    background-size: cover;
-    background-repeat: no-repeat
-    width: 200px;
-    height: 100vh;
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-    padding-top: 70px;
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("./Photoforgame/night-photograph-g0536047c0_1920.jpg");
+color: white;
 }
 
-.Q1{
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-.Q2{
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-.Q3{
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-.Q4{
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-.Q5{
-    padding-bottom: 30px;
-    font-size: 25px;
+label {
+    display: block;
+    }
+    
+    input {
+    width: 30px;
+    margin-left: 20px;
+    }
+    
+    button {
+    width: 100px;
+    margin-top: 20px;
+    }
+    
+   
+    
 
-}
