@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.69.0"
+  },
+  "name": "serena025.github.io",
+  "description": "Make board\r Following this tutorial and this website suggestion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

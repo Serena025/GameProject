@@ -1,0 +1,35 @@
+  // scss variables! 
+  $primary-color: #0e6cff;
+  $secondary-color: #ff8700;
+  $fonts: Arial, Helvetica, Serif;
+
+  // basic page styling. Some of it needs compiling!
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: $fonts;
+  line-height: 1.5;
+}
+
+
+
+@mixin hover-lift() {
+    transition: transform 350ms ease-in-out;
+    box-shadow: 0 .25em .5em 0 rgba(black, .2);
+
+    @include before() {
+        box-shadow: 0 0 1.25em rgba(black, .4);
+        opacity: 0;
+    }
+
+    &:hover,
+    &:focus  {
+        transform: scale(1.05);
+    }
+}
